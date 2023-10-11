@@ -16,3 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('newsletter','App\Http\Controllers\NewsletterController@create');
+Route::post('newsletter','App\Http\Controllers\NewsletterController@store');
